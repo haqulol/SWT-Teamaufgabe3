@@ -65,17 +65,17 @@
         </Button>
     </HBox>
     <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" spacing="20.0">
-        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="7">
+        <Button mnemonicParsing="false" onAction="#button7Clicked" prefHeight="40.0" prefWidth="80.0" text="7">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="8">
+        <Button mnemonicParsing="false" onAction="#button8Clicked" prefHeight="40.0" prefWidth="80.0" text="8">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="9">
+        <Button mnemonicParsing="false" onAction="#button9Clicked" prefHeight="40.0" prefWidth="80.0" text="9">
             <font>
                 <Font size="20.0" />
             </font>
@@ -87,17 +87,17 @@
         </Button>
     </HBox>
     <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" spacing="20.0">
-        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="4">
+        <Button mnemonicParsing="false" onAction="#button4Clicked" prefHeight="40.0" prefWidth="80.0" text="4">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="5">
+        <Button mnemonicParsing="false" onAction="#button5Clicked" prefHeight="40.0" prefWidth="80.0" text="5">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="6">
+        <Button mnemonicParsing="false" onAction="#button6Clicked" prefHeight="40.0" prefWidth="80.0" text="6">
             <font>
                 <Font size="20.0" />
             </font>
@@ -114,12 +114,12 @@
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="2">
+        <Button mnemonicParsing="false" onAction="#button2Clicked" prefHeight="40.0" prefWidth="80.0" text="2">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="3">
+        <Button mnemonicParsing="false" onAction="#button3Clicked" prefHeight="40.0" prefWidth="80.0" text="3">
             <font>
                 <Font size="20.0" />
             </font>
@@ -136,7 +136,7 @@
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="0">
+        <Button mnemonicParsing="false" onAction="#button0Clicked" prefHeight="40.0" prefWidth="80.0" text="0">
             <font>
                 <Font size="20.0" />
             </font>
