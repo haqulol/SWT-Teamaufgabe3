@@ -3,14 +3,153 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.default_javafx.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextField?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.default_javafx.HelloController">
+    <Text fx:id="savedNumbers" layoutX="40.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="5.0" />
+    <TextField fx:id="textField" editable="false" layoutX="25.0" layoutY="15.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="75.0" prefWidth="400.0" text="0">
+        <font>
+            <Font size="40.0" />
+        </font>
+    </TextField>
+    <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" spacing="20.0">
+        <Button mnemonicParsing="false"  prefHeight="40.0" prefWidth="80.0" text="\%">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="CE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="C">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="DEL">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" spacing="20.0">
+        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0"
+                text="1/x">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="x^2">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0"
+                text="^1/2">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="/">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Button>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" spacing="20.0">
+        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="7">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="8">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="9">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="*">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" spacing="20.0">
+        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="4">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="5">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="6">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="-">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" spacing="20.0">
+        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="1">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="2">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="3">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="+">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" spacing="20.0">
+        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="+/-">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text=".">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="=">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+    </HBox>
 </VBox>
