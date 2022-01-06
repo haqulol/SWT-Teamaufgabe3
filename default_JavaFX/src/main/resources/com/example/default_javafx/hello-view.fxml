@@ -109,7 +109,7 @@
         </Button>
     </HBox>
     <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" spacing="20.0">
-        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="1">
+        <Button mnemonicParsing="false" onAction="#button1Clicked" prefHeight="40.0" prefWidth="80.0" text="1">
             <font>
                 <Font size="20.0" />
             </font>
