@@ -79,6 +79,13 @@ public class HelloController {
     }
 
     @FXML
+    void clearTextField() {
+        currentNumber = "";
+        textField.setText("");
+        savedNumbers.setText("");
+    }
+
+    @FXML
     void button0Clicked() {
         if(!currentNumber.equals("")){
             addNumber("0");
