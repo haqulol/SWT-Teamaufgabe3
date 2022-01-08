@@ -14,7 +14,7 @@ public class HelloController {
 
     private String firstNumber = "";
 
-    private String currentNumber = "";
+    private String currentNumber = "0";
 
     private String calculationType;
 
@@ -136,6 +136,19 @@ public class HelloController {
     void button9Clicked() {
         addNumber("9");
     }
+    
+    @FXML
+    void buttonDeleteClicked() {
+        int numberInt = Integer.parseInt(currentNumber);
+        if (numberInt > 1){
+            numberInt = numberInt / 10;     //hopefully cuts off the last digit
+        } else if (numberInt == 1 || numberInt == 0) {
+            numberInt = 0;
+        }
+        currentNumber = String.valueOf(numberInt);
+        updateTextField();
+    }
+    
 
     public void updateTextField(){
         textField.setText(currentNumber);
