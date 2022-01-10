@@ -3,6 +3,7 @@ package com.example.default_javafx;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
+import java.lang.Math;
 
 public class HelloController {
 
@@ -14,7 +15,7 @@ public class HelloController {
 
     private String firstNumber = "";
 
-    private String currentNumber = "0";
+    private String currentNumber = "";
 
     private String calculationType;
 
@@ -37,7 +38,7 @@ public class HelloController {
     void multiplicationAction() {
         calculationSetup("*");
     }
-    
+
     @FXML
     void squareAction() {
         calculationSetup("^2");
@@ -45,28 +46,59 @@ public class HelloController {
     }
 
     @FXML
-    void rootAction(){}
+    void rootAction(){
+        calculationSetup("^(1/2)");
+        calculateOnlyOneNumberNeeded();
+    }
 
     @FXML
-    void inverseAction(){}
+    void inverseAction(){
+        calculationSetup("^(-1)");
+        calculateOnlyOneNumberNeeded();
+    }
 
     @FXML
-    void deleteAction(){}
+    void deleteAction(){
+        if ((currentNumber != null) && (currentNumber.length() > 0)) {
+            currentNumber = currentNumber.substring(0, currentNumber.length() - 1);
+            textField.setText(currentNumber);
+        }
+    }
 
     @FXML
-    void percentAction(){}
+    void percentAction(){
+        double firstNumberDouble = Double.parseDouble(firstNumber);
+        double currentNumberDouble = Double.parseDouble(currentNumber);
+        currentNumberDouble *= firstNumberDouble / 100;
+        currentNumber = String.valueOf(currentNumberDouble);
+        textField.setText(currentNumber);
+    }
 
     @FXML
-    void decimalAction(){}
+    void decimalAction(){
+        currentNumber = currentNumber.concat(".");
+        textField.setText(currentNumber);
+    }
 
     @FXML
-    void negateAction(){}
+    void negateAction(){
+        calculationSetup("*(-1)");
+        calculateOnlyOneNumberNeeded();
+    }
 
     @FXML
-    void cAction(){}
+    void cAction(){
+        currentNumber = "";
+        firstNumber = "";
+        textField.setText(currentNumber);
+        savedNumbers.setText("");
+    }
 
     @FXML
-    void ceAction(){}
+    void ceAction(){
+        currentNumber = "";
+        textField.setText(currentNumber);
+    }
 
     public void calculationSetup(String calculationType){
         this.calculationType = calculationType;
@@ -94,10 +126,12 @@ public class HelloController {
                 currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
             }
             case "/" -> {
-                double calculatedNumber = firstNumberDouble / secondNumberDouble;
-                savedNumbers.setText(firstNumber + " / " + currentNumber + " = " + calculatedNumber);
-                textField.setText(String.valueOf(calculatedNumber));
-                currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+                if (secondNumberDouble != 0) {
+                    double calculatedNumber = firstNumberDouble / secondNumberDouble;
+                    savedNumbers.setText(firstNumber + " / " + currentNumber + " = " + calculatedNumber);
+                    textField.setText(String.valueOf(calculatedNumber));
+                    currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+                }
             }
             case "*" -> {
                 double calculatedNumber = firstNumberDouble * secondNumberDouble;
@@ -107,7 +141,7 @@ public class HelloController {
             }
         }
     }
-    
+
     @FXML
     void calculateOnlyOneNumberNeeded() {
         double firstNumberDouble = Double.parseDouble(firstNumber);
@@ -143,17 +177,8 @@ public class HelloController {
     }
 
     @FXML
-    void clearTextField() {
-        currentNumber = "";
-        textField.setText("");
-        savedNumbers.setText("");
-    }
-
-    @FXML
     void button0Clicked() {
-        if(!currentNumber.equals("")){
-            addNumber("0");
-        }
+       addNumber("0");
     }
 
     @FXML
@@ -200,20 +225,6 @@ public class HelloController {
     void button9Clicked() {
         addNumber("9");
     }
-    
-    /* might not need it
-    @FXML
-    void buttonDeleteClicked() {
-        int numberInt = Integer.parseInt(currentNumber);
-        if (numberInt > 1){
-            numberInt = numberInt / 10;     //hopefully cuts off the last digit
-        } else if (numberInt == 1 || numberInt == 0) {
-            numberInt = 0;
-        }
-        currentNumber = String.valueOf(numberInt);
-        updateTextField();
-    }
-    */
 
     public void updateTextField(){
         textField.setText(currentNumber);
