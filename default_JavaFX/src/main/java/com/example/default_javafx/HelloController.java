@@ -104,6 +104,40 @@ public class HelloController {
             }
         }
     }
+    
+    @FXML
+    void calculateOnlyOneNumberNeeded() {
+        double firstNumberDouble = Double.parseDouble(firstNumber);
+
+        switch (calculationType) {
+            case "^2" -> {
+                double calculatedNumber = firstNumberDouble * firstNumberDouble;
+                savedNumbers.setText(firstNumber + " ^2 " + " = " + calculatedNumber);
+                textField.setText(String.valueOf(calculatedNumber));
+                currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+            }
+            case "^(1/2)" -> {
+                double calculatedNumber = Math.sqrt(firstNumberDouble);
+                savedNumbers.setText(firstNumber + " ^(1/2) " + " = " + calculatedNumber);
+                textField.setText(String.valueOf(calculatedNumber));
+                currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+            }
+            case "^(-1)" -> {
+                double calculatedNumber = 1 / firstNumberDouble;
+                savedNumbers.setText(firstNumber + " ^(-1) " + " = " + calculatedNumber);
+                textField.setText(String.valueOf(calculatedNumber));
+                currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+            }
+            case "*(-1)" -> {
+                double calculatedNumber = -firstNumberDouble;
+                savedNumbers.setText(firstNumber + " *(-1) " + " = " + calculatedNumber);
+                textField.setText(String.valueOf(calculatedNumber));
+                currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+            }
+        }
+
+
+    }
 
     @FXML
     void clearTextField() {
