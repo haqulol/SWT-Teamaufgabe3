@@ -37,6 +37,33 @@ public class HelloController {
     void multiplicationAction() {
         calculationSetup("*");
     }
+    
+    @FXML
+    void squareAction(){}
+
+    @FXML
+    void rootAction(){}
+
+    @FXML
+    void inverseAction(){}
+
+    @FXML
+    void deleteAction(){}
+
+    @FXML
+    void percentAction(){}
+
+    @FXML
+    void decimalAction(){}
+
+    @FXML
+    void negateAction(){}
+
+    @FXML
+    void cAction(){}
+
+    @FXML
+    void ceAction(){}
 
     public void calculationSetup(String calculationType){
         this.calculationType = calculationType;
