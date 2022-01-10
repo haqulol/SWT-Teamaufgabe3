@@ -39,7 +39,10 @@ public class HelloController {
     }
     
     @FXML
-    void squareAction(){}
+    void squareAction() {
+        calculationSetup("^2");
+        calculateOnlyOneNumberNeeded();
+    }
 
     @FXML
     void rootAction(){}
