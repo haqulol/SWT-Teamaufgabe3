@@ -47,30 +47,30 @@ public class HelloController {
 
     @FXML
     void calculate() {
-        int firstNumberInt = Integer.parseInt(firstNumber);
-        int secondNumberInt = Integer.parseInt(currentNumber);
+        double firstNumberDouble = Double.parseDouble(firstNumber);
+        double secondNumberDouble = Double.parseDouble(currentNumber);
 
         switch (calculationType) {
             case "+" -> {
-                int calculatedNumber = firstNumberInt + secondNumberInt;
+                double calculatedNumber = firstNumberDouble + secondNumberDouble;
                 savedNumbers.setText(firstNumber + " + " + currentNumber + " = " + calculatedNumber);
                 textField.setText(String.valueOf(calculatedNumber));
                 currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
             }
             case "-" -> {
-                int calculatedNumber = firstNumberInt - secondNumberInt;
+                double calculatedNumber = firstNumberDouble - secondNumberDouble;
                 savedNumbers.setText(firstNumber + " - " + currentNumber + " = " + calculatedNumber);
                 textField.setText(String.valueOf(calculatedNumber));
                 currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
             }
             case "/" -> {
-                double calculatedNumber = firstNumberInt / (double)secondNumberInt;
+                double calculatedNumber = firstNumberDouble / secondNumberDouble;
                 savedNumbers.setText(firstNumber + " / " + currentNumber + " = " + calculatedNumber);
                 textField.setText(String.valueOf(calculatedNumber));
                 currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
             }
             case "*" -> {
-                int calculatedNumber = firstNumberInt * secondNumberInt;
+                double calculatedNumber = firstNumberDouble * secondNumberDouble;
                 savedNumbers.setText(firstNumber + " * " + currentNumber + " = " + calculatedNumber);
                 textField.setText(String.valueOf(calculatedNumber));
                 currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
@@ -137,6 +137,7 @@ public class HelloController {
         addNumber("9");
     }
     
+    /* might not need it
     @FXML
     void buttonDeleteClicked() {
         int numberInt = Integer.parseInt(currentNumber);
@@ -148,7 +149,7 @@ public class HelloController {
         currentNumber = String.valueOf(numberInt);
         updateTextField();
     }
-    
+    */
 
     public void updateTextField(){
         textField.setText(currentNumber);

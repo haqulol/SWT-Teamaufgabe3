@@ -19,40 +19,39 @@
         </font>
     </TextField>
     <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" spacing="20.0">
-        <Button mnemonicParsing="false"  prefHeight="40.0" prefWidth="80.0" text="\%">
+        <Button mnemonicParsing="false"  onAction="#percentAction" prefHeight="40.0" prefWidth="80.0" text="\%">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button mnemonicParsing="false" onAction="#clearTextField" prefHeight="40.0" prefWidth="80.0" text="CE">
+        <Button mnemonicParsing="false" onAction="#ceAction" prefHeight="40.0" prefWidth="80.0" text="CE">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button mnemonicParsing="false" onAction="#clearTextField" prefHeight="40.0" prefWidth="80.0" text="C">
+        <Button mnemonicParsing="false" onAction="#cAction" prefHeight="40.0" prefWidth="80.0" text="C">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="DEL">
+        <Button mnemonicParsing="false" onAction="#deleteAction" prefHeight="40.0" prefWidth="80.0" text="DEL">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
     </HBox>
     <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" spacing="20.0">
-        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0"
-                text="1/x">
+        <Button mnemonicParsing="false" onAction="#inverseAction" prefHeight="40.0" prefWidth="80.0" text="1/x">
             <font>
                 <Font size="20.0"/>
             </font>
         </Button>
-        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="x^2">
+        <Button mnemonicParsing="false" onAction="#squareAction" prefHeight="40.0" prefWidth="80.0" text="x^2">
             <font>
                 <Font size="20.0"/>
             </font>
         </Button>
-        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0"
+        <Button mnemonicParsing="false" onAction="#rootAction" prefHeight="40.0" prefWidth="80.0"
                 text="^1/2">
             <font>
                 <Font size="20.0"/>
@@ -131,7 +130,7 @@
         </Button>
     </HBox>
     <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" spacing="20.0">
-        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="+/-">
+        <Button mnemonicParsing="false" onAction="#negateAction" prefHeight="40.0" prefWidth="80.0" text="+/-">
             <font>
                 <Font size="20.0" />
             </font>
@@ -141,7 +140,7 @@
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text=".">
+        <Button mnemonicParsing="false" onAction="#decimalAction" prefHeight="40.0" prefWidth="80.0" text=".">
             <font>
                 <Font size="20.0" />
             </font>
