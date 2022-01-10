@@ -175,17 +175,8 @@ public class HelloController {
     }
 
     @FXML
-    void clearTextField() {
-        currentNumber = "";
-        textField.setText("");
-        savedNumbers.setText("");
-    }
-
-    @FXML
     void button0Clicked() {
-        if(!currentNumber.equals("")){
-            addNumber("0");
-        }
+       addNumber("0");
     }
 
     @FXML
@@ -232,20 +223,6 @@ public class HelloController {
     void button9Clicked() {
         addNumber("9");
     }
-
-    /* might not need it
-    @FXML
-    void buttonDeleteClicked() {
-        int numberInt = Integer.parseInt(currentNumber);
-        if (numberInt > 1){
-            numberInt = numberInt / 10;     //hopefully cuts off the last digit
-        } else if (numberInt == 1 || numberInt == 0) {
-            numberInt = 0;
-        }
-        currentNumber = String.valueOf(numberInt);
-        updateTextField();
-    }
-    */
 
     public void updateTextField(){
         textField.setText(currentNumber);
