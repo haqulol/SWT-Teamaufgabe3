@@ -126,10 +126,12 @@ public class HelloController {
                 currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
             }
             case "/" -> {
-                double calculatedNumber = firstNumberDouble / secondNumberDouble;
-                savedNumbers.setText(firstNumber + " / " + currentNumber + " = " + calculatedNumber);
-                textField.setText(String.valueOf(calculatedNumber));
-                currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+                if (secondNumberDouble != 0) {
+                    double calculatedNumber = firstNumberDouble / secondNumberDouble;
+                    savedNumbers.setText(firstNumber + " / " + currentNumber + " = " + calculatedNumber);
+                    textField.setText(String.valueOf(calculatedNumber));
+                    currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+                }
             }
             case "*" -> {
                 double calculatedNumber = firstNumberDouble * secondNumberDouble;
