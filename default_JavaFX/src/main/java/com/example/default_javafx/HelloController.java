@@ -15,7 +15,7 @@ public class HelloController {
 
     private String firstNumber = "";
 
-    private String currentNumber = "0";
+    private String currentNumber = "";
 
     private String calculationType;
 
