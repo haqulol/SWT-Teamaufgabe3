@@ -20,6 +20,8 @@ public class HelloController {
 
     private String calculationType;     // calculation operator
 
+    private boolean firstNumberOnDisplay = false;
+
     @FXML
     void addAction() {
         calculationSetup("+");
@@ -59,10 +61,17 @@ public class HelloController {
     }
 
     @FXML
-    void deleteAction(){
-        if ((currentNumber != null) && (currentNumber.length() > 0)) {
-            currentNumber = currentNumber.substring(0, currentNumber.length() - 1);
-            textField.setText(currentNumber);
+    void deleteAction() {
+        if (firstNumberOnDisplay) {
+            if ((firstNumber != null) && (firstNumber.length() > 0)) {
+                firstNumber = firstNumber.substring(0, firstNumber.length() - 1);
+                textField.setText(firstNumber);
+            }
+        } else {
+            if ((currentNumber != null) && (currentNumber.length() > 0)) {
+                currentNumber = currentNumber.substring(0, currentNumber.length() - 1);
+                textField.setText(currentNumber);
+            }
         }
     }
 
@@ -77,16 +86,44 @@ public class HelloController {
 
     @FXML
     void decimalAction() {
-        if ((Double.parseDouble(currentNumber) % 1) == 0){
-            currentNumber = currentNumber.concat(".");
-            textField.setText(currentNumber);
+        if (firstNumberOnDisplay) {
+            if (!(firstNumber.contains("."))) {
+                firstNumber = firstNumber.concat(".");
+                textField.setText(firstNumber);
+            }
+        } else {
+            if (!(currentNumber.contains("."))) {
+                currentNumber = currentNumber.concat(".");
+                textField.setText(currentNumber);
+            }
         }
     }
 
     @FXML
     void negateAction() {
-        calculationSetup("*(-1)");
-        calculateOnlyOneNumberNeeded();
+        if (firstNumberOnDisplay) {
+            if (firstNumber.equals("-")){
+                firstNumber = "";
+            } else if (firstNumber.equals("")){
+                firstNumber = "-";
+            } else {
+                double firstNumberDouble = Double.parseDouble(firstNumber);
+                double calculatedNumber = -firstNumberDouble;
+                textField.setText(String.valueOf(calculatedNumber));
+                firstNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+            }
+        } else {
+            if (currentNumber.equals("-")){
+                currentNumber = "";
+            } else if (currentNumber.equals("")){
+                currentNumber = "-";
+            } else {
+                double currentNumberDouble = Double.parseDouble(currentNumber);
+                double calculatedNumber = -currentNumberDouble;
+                currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+            }
+            textField.setText(currentNumber);
+        }
     }
 
     @FXML
@@ -98,18 +135,19 @@ public class HelloController {
     }
 
     @FXML
-    void ceAction(){
+    void ceAction() {
         currentNumber = "";
         textField.setText(currentNumber);
     }
 
-    public void calculationSetup(String calculationType){
+    public void calculationSetup(String calculationType) {
         this.calculationType = calculationType;
-        if ((firstNumber.equals(""))){
+        if ((firstNumber.equals("") && (!currentNumber.equals("-")))){
             firstNumber = currentNumber;
         }
         currentNumber = "";
         savedNumbers.setText(firstNumber + " " + calculationType);
+        firstNumberOnDisplay = false;
     }
 
     @FXML
@@ -146,13 +184,14 @@ public class HelloController {
                     firstNumber = String.valueOf(calculatedNumber);           // go on with calculated number
                 }
             }
+            firstNumberOnDisplay = true;
         }
 
     }
 
     @FXML
     void calculateOnlyOneNumberNeeded() {
-        if (!firstNumber.equals("")){
+        if (!(firstNumber.equals("")) && !(firstNumber.equals("-"))){
             double firstNumberDouble = Double.parseDouble(firstNumber);
 
             switch (calculationType) {
@@ -174,23 +213,9 @@ public class HelloController {
                     textField.setText(String.valueOf(calculatedNumber));
                     firstNumber = String.valueOf(calculatedNumber);           // go on with calculated number
                 }
-                case "*(-1)" -> {
-                    double calculatedNumber = -firstNumberDouble;
-                    savedNumbers.setText(firstNumber + " *(-1) " + " = " + calculatedNumber);
-                    textField.setText(String.valueOf(calculatedNumber));
-                    firstNumber = String.valueOf(calculatedNumber);           // go on with calculated number
-                }
             }
-        } else {
-            switch (calculationType){
-                case "*(-1)" -> {
-                    currentNumber += "-";
-                    textField.setText(currentNumber);
-                }
-            }
+            firstNumberOnDisplay = true;
         }
-
-
     }
 
     @FXML
@@ -243,11 +268,11 @@ public class HelloController {
         addNumber("9");
     }
 
-    public void updateTextField(){
+    public void updateTextField() {
         textField.setText(currentNumber);
     }
 
-    public void addNumber(String number){
+    public void addNumber(String number) {
         currentNumber += number;
         updateTextField();
     }
