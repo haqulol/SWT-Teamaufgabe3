@@ -126,11 +126,15 @@ public class HelloController {
                 currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
             }
             case "/" -> {
-                if (secondNumberDouble != 0) {
+                try{ // Catch exception divide by zero
                     double calculatedNumber = firstNumberDouble / secondNumberDouble;
                     savedNumbers.setText(firstNumber + " / " + currentNumber + " = " + calculatedNumber);
                     textField.setText(String.valueOf(calculatedNumber));
                     currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+                }
+                catch(ArithmeticException e) {
+                    textField.setText(String.valueOf(Double.POSITIVE_INFINITY));
+                    savedNumbers.setText("INFINITY");
                 }
             }
             case "*" -> {
@@ -144,7 +148,17 @@ public class HelloController {
 
     @FXML
     void calculateOnlyOneNumberNeeded() {
+        // Debugoutput for empty String
+
+
+
+        if(firstNumber==""){
+            System.out.println("EMPTY STRING\n");
+            return;
+        }
         double firstNumberDouble = Double.parseDouble(firstNumber);
+        System.out.println("FIRSTNUMBER :" + firstNumber);
+        System.out.println("FIRSTDOUBLE :" + firstNumberDouble);
 
         switch (calculationType) {
             case "^2" -> {
@@ -166,10 +180,16 @@ public class HelloController {
                 currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
             }
             case "*(-1)" -> {
-                double calculatedNumber = -firstNumberDouble;
-                savedNumbers.setText(firstNumber + " *(-1) " + " = " + calculatedNumber);
-                textField.setText(String.valueOf(calculatedNumber));
-                currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+                try {
+                    if(firstNumberDouble != (double)0) {
+                    double calculatedNumber = -firstNumberDouble;
+                    savedNumbers.setText(firstNumber + " *(-1) " + " = " + calculatedNumber);
+                    textField.setText(String.valueOf(calculatedNumber));
+                    currentNumber = String.valueOf(calculatedNumber);
+                           }}
+                          catch (NumberFormatException e) {
+                              e.printStackTrace();
+                          }               // go on with calculated number
             }
         }
 
