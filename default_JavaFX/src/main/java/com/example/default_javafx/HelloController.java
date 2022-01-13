@@ -102,25 +102,29 @@ public class HelloController {
     @FXML
     void negateAction() {
         if (firstNumberOnDisplay) {
-            if (firstNumber.equals("-")){
-                firstNumber = "";
-            } else if (firstNumber.equals("")){
-                firstNumber = "-";
-            } else {
-                double firstNumberDouble = Double.parseDouble(firstNumber);
-                double calculatedNumber = -firstNumberDouble;
-                textField.setText(String.valueOf(calculatedNumber));
-                firstNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+            switch (firstNumber) {
+                case "" -> firstNumber = "-";
+                case "-" -> firstNumber = "";
+                case "." -> firstNumber = "-.";
+
+                default -> {
+                    double firstNumberDouble = Double.parseDouble(firstNumber);
+                    double calculatedNumber = -firstNumberDouble;
+                    firstNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+                }
             }
+            textField.setText(firstNumber);
         } else {
-            if (currentNumber.equals("-")){
-                currentNumber = "";
-            } else if (currentNumber.equals("")){
-                currentNumber = "-";
-            } else {
-                double currentNumberDouble = Double.parseDouble(currentNumber);
-                double calculatedNumber = -currentNumberDouble;
-                currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+            switch (currentNumber) {
+                case "" -> currentNumber = "-";
+                case "-" -> currentNumber = "";
+                case "." -> currentNumber = "-.";
+
+                default -> {
+                    double currentNumberDouble = Double.parseDouble(currentNumber);
+                    double calculatedNumber = -currentNumberDouble;
+                    currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+                }
             }
             textField.setText(currentNumber);
         }
@@ -132,6 +136,7 @@ public class HelloController {
         firstNumber = "";
         textField.setText(currentNumber);
         savedNumbers.setText("");
+        firstNumberOnDisplay = true;
     }
 
     @FXML
