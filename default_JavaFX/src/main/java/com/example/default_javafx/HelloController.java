@@ -268,13 +268,14 @@ public class HelloController {
         addNumber("9");
     }
 
-    public void updateTextField() {
-        textField.setText(currentNumber);
-    }
-
     public void addNumber(String number) {
-        currentNumber += number;
-        updateTextField();
+        if (firstNumberOnDisplay) {
+            firstNumber += number;
+            textField.setText(firstNumber);
+        } else {
+            currentNumber += number;
+            textField.setText(currentNumber);
+        }
     }
 
 }
