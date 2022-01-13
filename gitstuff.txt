@@ -1,0 +1,844 @@
+commit a817538d4f283b5454b7cc51c27f4caf8deca687
+Author: andre.buderus <andre.buderus.goe@gmail.com>
+Date:   Thu Jan 13 19:36:16 2022 +0100
+
+    Add division by zero cases
+
+commit c2848260bd472b7fe9b59dbe4ce32736e5883dd5
+Merge: af48e26 1a1af27
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Thu Jan 13 18:34:12 2022 +0100
+
+    Merge pull request #22 from haqulol/test2
+    
+    last faults corrected
+
+commit 1a1af27694b99cc1fee44051ebefca0f3028db59
+Author: SiWoMoManaManaPNipNia <97243631+SiWoMoManaManaPNipNia@users.noreply.github.com>
+Date:   Thu Jan 13 18:33:14 2022 +0100
+
+    last faults corrected
+
+commit af48e26b5dfcd0c9f2ee3ffa2c109c06639e36d5
+Merge: 53b7ae4 f83a5e0
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Thu Jan 13 18:29:26 2022 +0100
+
+    Merge pull request #21 from haqulol/test2
+    
+    Add fix for addnumber
+
+commit f83a5e0856ca42422a515e4570e33295068e3fdf
+Author: andre.buderus <andre.buderus.goe@gmail.com>
+Date:   Thu Jan 13 18:28:05 2022 +0100
+
+    Add fix for addnumber
+
+commit 53b7ae4a03519ec8c1f1b2e65c28ab41b813d9fe
+Merge: 048edda 2d5fd4d
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Thu Jan 13 18:26:21 2022 +0100
+
+    Merge pull request #20 from haqulol/test2
+    
+    Add decimal + delete fix; negate reworked
+
+commit 2d5fd4dae5545b0302a277c9cd980d3e5b06da05
+Author: andre.buderus <andre.buderus.goe@gmail.com>
+Date:   Thu Jan 13 18:25:15 2022 +0100
+
+    Add decimal + delete fix; negate reworked
+
+commit 048edda0eeda0d363129252572a7d3ab07afde40
+Merge: d6f4b7b 0c144f7
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Thu Jan 13 18:23:30 2022 +0100
+
+    Merge pull request #19 from haqulol/test2
+    
+    Add possibility for multiple operations & continuing with same operat…
+
+commit 0c144f76e5da2c3cf9ffad1f1e8814fafae97417
+Author: andre.buderus <andre.buderus.goe@gmail.com>
+Date:   Thu Jan 13 18:22:08 2022 +0100
+
+    Add possibility for multiple operations & continuing with same operation for multiple equality-presses
+
+commit d6f4b7bde9ebc4c4315fb3150f58ae3543af5e96
+Merge: 57a8ae9 f82f373
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Mon Jan 10 19:04:07 2022 +0100
+
+    Merge pull request #17 from haqulol/dev_local
+    
+    working
+
+commit f82f373ef410e8c5b2d3812c6596436d1297dc40
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Mon Jan 10 18:57:59 2022 +0100
+
+    divide 0 fix
+
+commit 3be3207493ba8c01dafb3d7a98b71b58b05bdd42
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Mon Jan 10 18:57:21 2022 +0100
+
+    deleted some stuff
+
+commit 4ae1336276bd30051b068ac764fc381f793c8a45
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Mon Jan 10 18:55:49 2022 +0100
+
+    Update HelloController.java
+
+commit fdc944418e116f71badd87683058e62428d6ddea
+Author: andre.buderus <andre.buderus.goe@gmail.com>
+Date:   Mon Jan 10 18:54:31 2022 +0100
+
+    Forget the java.lang.math import
+
+commit 108b76752c2b2fccbf1bfa823745699d3c8bacb8
+Author: andre.buderus <andre.buderus.goe@gmail.com>
+Date:   Mon Jan 10 18:51:33 2022 +0100
+
+    Add some new functions to the calculator
+
+commit 924f3dbeffb74d976339d76f7954b2059f96eb5e
+Merge: 0de03af 57a8ae9
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Mon Jan 10 18:21:39 2022 +0100
+
+    Merge pull request #16 from haqulol/main
+    
+    Rebalancing
+
+commit 57a8ae9354d286449759274bf593a3c92e9efd73
+Merge: 3d74eb6 0de03af
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Mon Jan 10 18:20:29 2022 +0100
+
+    Merge pull request #15 from haqulol/dev
+    
+    Dev
+
+commit 3d74eb6c12e1526e1b09f67d832f3c03936d9288
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Mon Jan 10 18:19:54 2022 +0100
+
+    added second calculate style
+
+commit 0de03af9a0f241379551f73b9dfc350acf5ca232
+Author: SiWoMoManaManaPNipNia <97243631+SiWoMoManaManaPNipNia@users.noreply.github.com>
+Date:   Mon Jan 10 18:15:11 2022 +0100
+
+    Update HelloApplication.java
+
+commit 3b0fecbfcec6b27c56d807a59cb06ba55fd125ba
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Mon Jan 10 18:14:54 2022 +0100
+
+    added void function for square
+
+commit 31a3a78064c949ef98ac7614ce0d5d6c45b26992
+Merge: 0a03704 31e72df
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Mon Jan 10 17:21:18 2022 +0100
+
+    Merge pull request #14 from haqulol/main
+    
+    added remaining void actions
+
+commit 31e72df9759f00e49369a36729cd8732dc74f856
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Mon Jan 10 17:20:23 2022 +0100
+
+    added remaining void actions
+
+commit 0a03704ad3cb048c34dd055d578f71c461bfb2f0
+Merge: 92a2465 790836f
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Mon Jan 10 17:11:29 2022 +0100
+
+    Merge pull request #13 from haqulol/main
+    
+    dev behind
+
+commit 790836fc1240c6d7f58bcc863f7c6903a576a456
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Mon Jan 10 17:09:22 2022 +0100
+
+    added double-compatibility
+
+commit 10a72a9d7f08451620f94c996df4c610c8d7af1c
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Mon Jan 10 17:02:57 2022 +0100
+
+    added remaining onAction parameters
+
+commit 92a2465ff622b6e6f4452a58c23b9195d3b05e7c
+Merge: 057a7f7 b75c2f2
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Sat Jan 8 15:38:49 2022 +0100
+
+    Merge pull request #12 from haqulol/main
+    
+    Rebalancing
+
+commit b75c2f2d988b3d02afe700982dc7a0213811c6bd
+Merge: 87fbe91 057a7f7
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Sat Jan 8 15:37:38 2022 +0100
+
+    Merge pull request #11 from haqulol/dev
+    
+    added void function for button del
+
+commit 057a7f73251bb5edc060867e3a65415a5d9b8c29
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Sat Jan 8 15:36:24 2022 +0100
+
+    added void function for button del
+    
+    Added the void function for pressing the del button and also initialize currentNumber with "0"
+
+commit 87fbe91a0667aad5b9189af6e268fe41a03d8656
+Merge: 6e80b12 1186ca9
+Author: SiWoMoManaManaPNipNia <97243631+SiWoMoManaManaPNipNia@users.noreply.github.com>
+Date:   Thu Jan 6 18:53:39 2022 +0100
+
+    Merge pull request #10 from haqulol/dev
+    
+    Dev
+
+commit 1186ca9aa368709c3e4487fa29d8b1d4e84c6152
+Author: SiWoMoManaManaPNipNia <97243631+SiWoMoManaManaPNipNia@users.noreply.github.com>
+Date:   Thu Jan 6 18:53:06 2022 +0100
+
+    Added onAction Parameter cleartextfield
+
+commit c78f7e5959d64e15876cb4551dc0f9b9d011f9ae
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Thu Jan 6 18:52:01 2022 +0100
+
+    added void function clearTextField
+
+commit 6e80b120d39185292ff44c6e12f1a6a4bf2a9361
+Merge: ef4e07f b97bc28
+Author: SiWoMoManaManaPNipNia <97243631+SiWoMoManaManaPNipNia@users.noreply.github.com>
+Date:   Thu Jan 6 18:40:50 2022 +0100
+
+    Merge pull request #9 from haqulol/dev
+    
+    Dev
+
+commit b97bc2885caf53421fd192731f57eae640dc291e
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Thu Jan 6 18:40:00 2022 +0100
+
+    Added function for *,/,+,-,= and represent result
+    
+    Added these functions with additional functions and result is shown in textfield.
+
+commit 4e51e74647be22bb1f19c900fc438220edad3fb8
+Author: SiWoMoManaManaPNipNia <97243631+SiWoMoManaManaPNipNia@users.noreply.github.com>
+Date:   Thu Jan 6 18:39:35 2022 +0100
+
+    Added OnAction Parameter for *,/,+,-,=
+
+commit 77bc823ec788d85db9181f1f2a5914c77f3751f9
+Merge: b11bc74 ef4e07f
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Thu Jan 6 18:29:02 2022 +0100
+
+    Merge pull request #8 from haqulol/main
+    
+    fix
+
+commit ef4e07f0e1167c75005e86bdfa18ad7d400553af
+Merge: e8affab b11bc74
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Thu Jan 6 18:28:34 2022 +0100
+
+    Merge pull request #7 from haqulol/dev
+    
+    Dev
+
+commit b11bc74fb3a5210cffdd5b6310b98349d5e69819
+Author: SiWoMoManaManaPNipNia <97243631+SiWoMoManaManaPNipNia@users.noreply.github.com>
+Date:   Thu Jan 6 18:27:31 2022 +0100
+
+    Added param
+    
+    Added onAction Paramter for button with number 0 and 2-9
+
+commit 4f0e2d0efd4f557a6b2388ae3b183bdbb95aba38
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Thu Jan 6 18:27:13 2022 +0100
+
+    Added void function for all numbers
+
+commit e8affab5ee10d036885f052f874a8b24d6199b6a
+Merge: 2e14f44 a2f8a55
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Thu Jan 6 18:13:16 2022 +0100
+
+    Merge pull request #6 from haqulol/dev
+    
+    Dev
+
+commit a2f8a5566cff087a391158eb2c67bda8872d5809
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Thu Jan 6 18:12:28 2022 +0100
+
+    Added void function for button 1 clicked
+    
+    This contains a new function addNumber and a new String currentNumber
+
+commit 1ca1a30bc4a7a85b1b5ea5d08465b43e826c853e
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Thu Jan 6 18:08:15 2022 +0100
+
+    Added onAction Parameter for button with number 1
+
+commit 2e14f4466aa395f27e84ebdc87ea0aff753a0bf4
+Merge: 020a25b 821ae6a
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Thu Jan 6 18:05:49 2022 +0100
+
+    Merge pull request #5 from haqulol/dev
+    
+    Dev
+
+commit 821ae6a87b28982a45af3376cd9ebf740bc31193
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Thu Jan 6 18:05:11 2022 +0100
+
+    Update HelloApplication.java
+    
+    Doppeltes package gelöscht
+
+commit 17e6f94d85bde569728e7d404d0dbeb13c186429
+Merge: 56074fd 020a25b
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Thu Jan 6 17:57:59 2022 +0100
+
+    Merge pull request #4 from haqulol/main
+    
+    fix dev branch
+
+commit 020a25b47e5c01077ae5fe31931dcd7703485dd1
+Merge: 3f88734 56074fd
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Thu Jan 6 17:50:00 2022 +0100
+
+    Merge pull request #3 from haqulol/dev
+    
+    Updated name and size of window
+
+commit 56074fd9160a21e37d66ee152644c587f33dbb6e
+Author: SiWoMoManaManaPNipNia <97243631+SiWoMoManaManaPNipNia@users.noreply.github.com>
+Date:   Thu Jan 6 17:49:10 2022 +0100
+
+    Updated name and size of window
+
+commit 3f88734c2de4cf8b13361bdab846dd362e6e08aa
+Merge: 4cc49b1 b84a1ba
+Author: SiWoMoManaManaPNipNia <97243631+SiWoMoManaManaPNipNia@users.noreply.github.com>
+Date:   Thu Jan 6 17:45:15 2022 +0100
+
+    Merge pull request #2 from haqulol/dev
+    
+    Add files via upload
+
+commit b84a1bac9652561d14b2ff8e719abef9f5891cb1
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Thu Jan 6 17:43:28 2022 +0100
+
+    Add files via upload
+
+commit 4cc49b10fa7f0bc60229f31785751df322552039
+Author: SiWoMoManaManaPNipNia <97243631+SiWoMoManaManaPNipNia@users.noreply.github.com>
+Date:   Thu Jan 6 17:40:07 2022 +0100
+
+    Updated size of the window
+
+commit eb48ed66304c526811cfe64c18dc9bb5b165ab12
+Author: SiWoMoManaManaPNipNia <97243631+SiWoMoManaManaPNipNia@users.noreply.github.com>
+Date:   Thu Jan 6 17:37:54 2022 +0100
+
+    new GUI
+
+commit b1073cd68592f5e6619e0b0dcc0d63f5ebe6e1cc
+Merge: 74c6eb9 59ba617
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Thu Jan 6 17:23:56 2022 +0100
+
+    Merge pull request #1 from haqulol/dev
+    
+    Dev
+
+commit 59ba617169cd3fa81d08097d89894e3e7756e7ad
+Author: SiWoMoManaManaPNipNia <97243631+SiWoMoManaManaPNipNia@users.noreply.github.com>
+Date:   Thu Jan 6 17:20:24 2022 +0100
+
+    Update HelloApplication.java
+
+commit 1d46c2fad9384cd377271e10feb04c3b3ce313a2
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Thu Jan 6 17:16:01 2022 +0100
+
+    Add files via upload
+    
+    Default Version of JavaFX
+
+commit 74c6eb9e1fe4c677c928231f31110b81d62148f3
+Author: haqulol <73111740+haqulol@users.noreply.github.com>
+Date:   Thu Jan 6 17:10:43 2022 +0100
+
+    Initial commit
+commit 0503107091348efb227000080776bfa22b0933ad
+Author: andre.buderus <andre.buderus.goe@gmail.com>
+Date:   Thu Jan 13 19:40:15 2022 +0100
+
+    Add gitstuff.txt with gitlog from my branch
+
+commit a817538d4f283b5454b7cc51c27f4caf8deca687
+Author: andre.buderus <andre.buderus.goe@gmail.com>
+Date:   Thu Jan 13 19:36:16 2022 +0100
+
+    Add division by zero cases
+
+commit 025a454ce04f934befb7e14fe370a57d893961e3
+Author: andre.buderus <andre.buderus.goe@gmail.com>
+Date:   Thu Jan 13 19:00:10 2022 +0100
+
+    Remove HelloController.java for fix
+
+commit 2758221248041b0d45482cc30e83d4ba6e0dc553
+Merge: bcd97e2 c284826
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Thu Jan 13 18:37:12 2022 +0100
+
+    Merge pull request #23 from haqulol/main
+    
+    dev fix
+
+commit c2848260bd472b7fe9b59dbe4ce32736e5883dd5
+Merge: af48e26 1a1af27
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Thu Jan 13 18:34:12 2022 +0100
+
+    Merge pull request #22 from haqulol/test2
+    
+    last faults corrected
+
+commit 1a1af27694b99cc1fee44051ebefca0f3028db59
+Author: SiWoMoManaManaPNipNia <97243631+SiWoMoManaManaPNipNia@users.noreply.github.com>
+Date:   Thu Jan 13 18:33:14 2022 +0100
+
+    last faults corrected
+
+commit bcd97e2c14e899e3b5456c6cb3e94da7e4a1d517
+Author: SiWoMoManaManaPNipNia <97243631+SiWoMoManaManaPNipNia@users.noreply.github.com>
+Date:   Thu Jan 13 18:31:38 2022 +0100
+
+    last faults corrected
+
+commit af48e26b5dfcd0c9f2ee3ffa2c109c06639e36d5
+Merge: 53b7ae4 f83a5e0
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Thu Jan 13 18:29:26 2022 +0100
+
+    Merge pull request #21 from haqulol/test2
+    
+    Add fix for addnumber
+
+commit f83a5e0856ca42422a515e4570e33295068e3fdf
+Author: andre.buderus <andre.buderus.goe@gmail.com>
+Date:   Thu Jan 13 18:28:05 2022 +0100
+
+    Add fix for addnumber
+
+commit 53b7ae4a03519ec8c1f1b2e65c28ab41b813d9fe
+Merge: 048edda 2d5fd4d
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Thu Jan 13 18:26:21 2022 +0100
+
+    Merge pull request #20 from haqulol/test2
+    
+    Add decimal + delete fix; negate reworked
+
+commit 2d5fd4dae5545b0302a277c9cd980d3e5b06da05
+Author: andre.buderus <andre.buderus.goe@gmail.com>
+Date:   Thu Jan 13 18:25:15 2022 +0100
+
+    Add decimal + delete fix; negate reworked
+
+commit 048edda0eeda0d363129252572a7d3ab07afde40
+Merge: d6f4b7b 0c144f7
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Thu Jan 13 18:23:30 2022 +0100
+
+    Merge pull request #19 from haqulol/test2
+    
+    Add possibility for multiple operations & continuing with same operat…
+
+commit 0c144f76e5da2c3cf9ffad1f1e8814fafae97417
+Author: andre.buderus <andre.buderus.goe@gmail.com>
+Date:   Thu Jan 13 18:22:08 2022 +0100
+
+    Add possibility for multiple operations & continuing with same operation for multiple equality-presses
+
+commit 4e6c834ead69bf5f35885d9220b497b7708204d5
+Author: andre.buderus <andre.buderus.goe@gmail.com>
+Date:   Thu Jan 13 18:05:59 2022 +0100
+
+    Add two exception catches divide by zero and empty format string
+
+commit 523a06d5160e4413b04c8b66f3819f99fff46336
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Tue Jan 11 20:16:15 2022 +0100
+
+    decimal fix, +/- fix
+
+commit a73b0ce43f130616377c95dae9823b0ce6fe7c83
+Merge: 924f3db d6f4b7b
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Mon Jan 10 19:05:57 2022 +0100
+
+    Merge pull request #18 from haqulol/main
+    
+    dev uptodate
+
+commit d6f4b7bde9ebc4c4315fb3150f58ae3543af5e96
+Merge: 57a8ae9 f82f373
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Mon Jan 10 19:04:07 2022 +0100
+
+    Merge pull request #17 from haqulol/dev_local
+    
+    working
+
+commit f82f373ef410e8c5b2d3812c6596436d1297dc40
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Mon Jan 10 18:57:59 2022 +0100
+
+    divide 0 fix
+
+commit 3be3207493ba8c01dafb3d7a98b71b58b05bdd42
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Mon Jan 10 18:57:21 2022 +0100
+
+    deleted some stuff
+
+commit 4ae1336276bd30051b068ac764fc381f793c8a45
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Mon Jan 10 18:55:49 2022 +0100
+
+    Update HelloController.java
+
+commit fdc944418e116f71badd87683058e62428d6ddea
+Author: andre.buderus <andre.buderus.goe@gmail.com>
+Date:   Mon Jan 10 18:54:31 2022 +0100
+
+    Forget the java.lang.math import
+
+commit 108b76752c2b2fccbf1bfa823745699d3c8bacb8
+Author: andre.buderus <andre.buderus.goe@gmail.com>
+Date:   Mon Jan 10 18:51:33 2022 +0100
+
+    Add some new functions to the calculator
+
+commit 924f3dbeffb74d976339d76f7954b2059f96eb5e
+Merge: 0de03af 57a8ae9
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Mon Jan 10 18:21:39 2022 +0100
+
+    Merge pull request #16 from haqulol/main
+    
+    Rebalancing
+
+commit 57a8ae9354d286449759274bf593a3c92e9efd73
+Merge: 3d74eb6 0de03af
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Mon Jan 10 18:20:29 2022 +0100
+
+    Merge pull request #15 from haqulol/dev
+    
+    Dev
+
+commit 3d74eb6c12e1526e1b09f67d832f3c03936d9288
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Mon Jan 10 18:19:54 2022 +0100
+
+    added second calculate style
+
+commit 0de03af9a0f241379551f73b9dfc350acf5ca232
+Author: SiWoMoManaManaPNipNia <97243631+SiWoMoManaManaPNipNia@users.noreply.github.com>
+Date:   Mon Jan 10 18:15:11 2022 +0100
+
+    Update HelloApplication.java
+
+commit 3b0fecbfcec6b27c56d807a59cb06ba55fd125ba
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Mon Jan 10 18:14:54 2022 +0100
+
+    added void function for square
+
+commit 31a3a78064c949ef98ac7614ce0d5d6c45b26992
+Merge: 0a03704 31e72df
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Mon Jan 10 17:21:18 2022 +0100
+
+    Merge pull request #14 from haqulol/main
+    
+    added remaining void actions
+
+commit 31e72df9759f00e49369a36729cd8732dc74f856
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Mon Jan 10 17:20:23 2022 +0100
+
+    added remaining void actions
+
+commit 0a03704ad3cb048c34dd055d578f71c461bfb2f0
+Merge: 92a2465 790836f
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Mon Jan 10 17:11:29 2022 +0100
+
+    Merge pull request #13 from haqulol/main
+    
+    dev behind
+
+commit 790836fc1240c6d7f58bcc863f7c6903a576a456
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Mon Jan 10 17:09:22 2022 +0100
+
+    added double-compatibility
+
+commit 10a72a9d7f08451620f94c996df4c610c8d7af1c
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Mon Jan 10 17:02:57 2022 +0100
+
+    added remaining onAction parameters
+
+commit 92a2465ff622b6e6f4452a58c23b9195d3b05e7c
+Merge: 057a7f7 b75c2f2
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Sat Jan 8 15:38:49 2022 +0100
+
+    Merge pull request #12 from haqulol/main
+    
+    Rebalancing
+
+commit b75c2f2d988b3d02afe700982dc7a0213811c6bd
+Merge: 87fbe91 057a7f7
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Sat Jan 8 15:37:38 2022 +0100
+
+    Merge pull request #11 from haqulol/dev
+    
+    added void function for button del
+
+commit 057a7f73251bb5edc060867e3a65415a5d9b8c29
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Sat Jan 8 15:36:24 2022 +0100
+
+    added void function for button del
+    
+    Added the void function for pressing the del button and also initialize currentNumber with "0"
+
+commit 87fbe91a0667aad5b9189af6e268fe41a03d8656
+Merge: 6e80b12 1186ca9
+Author: SiWoMoManaManaPNipNia <97243631+SiWoMoManaManaPNipNia@users.noreply.github.com>
+Date:   Thu Jan 6 18:53:39 2022 +0100
+
+    Merge pull request #10 from haqulol/dev
+    
+    Dev
+
+commit 1186ca9aa368709c3e4487fa29d8b1d4e84c6152
+Author: SiWoMoManaManaPNipNia <97243631+SiWoMoManaManaPNipNia@users.noreply.github.com>
+Date:   Thu Jan 6 18:53:06 2022 +0100
+
+    Added onAction Parameter cleartextfield
+
+commit c78f7e5959d64e15876cb4551dc0f9b9d011f9ae
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Thu Jan 6 18:52:01 2022 +0100
+
+    added void function clearTextField
+
+commit 6e80b120d39185292ff44c6e12f1a6a4bf2a9361
+Merge: ef4e07f b97bc28
+Author: SiWoMoManaManaPNipNia <97243631+SiWoMoManaManaPNipNia@users.noreply.github.com>
+Date:   Thu Jan 6 18:40:50 2022 +0100
+
+    Merge pull request #9 from haqulol/dev
+    
+    Dev
+
+commit b97bc2885caf53421fd192731f57eae640dc291e
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Thu Jan 6 18:40:00 2022 +0100
+
+    Added function for *,/,+,-,= and represent result
+    
+    Added these functions with additional functions and result is shown in textfield.
+
+commit 4e51e74647be22bb1f19c900fc438220edad3fb8
+Author: SiWoMoManaManaPNipNia <97243631+SiWoMoManaManaPNipNia@users.noreply.github.com>
+Date:   Thu Jan 6 18:39:35 2022 +0100
+
+    Added OnAction Parameter for *,/,+,-,=
+
+commit 77bc823ec788d85db9181f1f2a5914c77f3751f9
+Merge: b11bc74 ef4e07f
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Thu Jan 6 18:29:02 2022 +0100
+
+    Merge pull request #8 from haqulol/main
+    
+    fix
+
+commit ef4e07f0e1167c75005e86bdfa18ad7d400553af
+Merge: e8affab b11bc74
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Thu Jan 6 18:28:34 2022 +0100
+
+    Merge pull request #7 from haqulol/dev
+    
+    Dev
+
+commit b11bc74fb3a5210cffdd5b6310b98349d5e69819
+Author: SiWoMoManaManaPNipNia <97243631+SiWoMoManaManaPNipNia@users.noreply.github.com>
+Date:   Thu Jan 6 18:27:31 2022 +0100
+
+    Added param
+    
+    Added onAction Paramter for button with number 0 and 2-9
+
+commit 4f0e2d0efd4f557a6b2388ae3b183bdbb95aba38
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Thu Jan 6 18:27:13 2022 +0100
+
+    Added void function for all numbers
+
+commit e8affab5ee10d036885f052f874a8b24d6199b6a
+Merge: 2e14f44 a2f8a55
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Thu Jan 6 18:13:16 2022 +0100
+
+    Merge pull request #6 from haqulol/dev
+    
+    Dev
+
+commit a2f8a5566cff087a391158eb2c67bda8872d5809
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Thu Jan 6 18:12:28 2022 +0100
+
+    Added void function for button 1 clicked
+    
+    This contains a new function addNumber and a new String currentNumber
+
+commit 1ca1a30bc4a7a85b1b5ea5d08465b43e826c853e
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Thu Jan 6 18:08:15 2022 +0100
+
+    Added onAction Parameter for button with number 1
+
+commit 2e14f4466aa395f27e84ebdc87ea0aff753a0bf4
+Merge: 020a25b 821ae6a
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Thu Jan 6 18:05:49 2022 +0100
+
+    Merge pull request #5 from haqulol/dev
+    
+    Dev
+
+commit 821ae6a87b28982a45af3376cd9ebf740bc31193
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Thu Jan 6 18:05:11 2022 +0100
+
+    Update HelloApplication.java
+    
+    Doppeltes package gelöscht
+
+commit 17e6f94d85bde569728e7d404d0dbeb13c186429
+Merge: 56074fd 020a25b
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Thu Jan 6 17:57:59 2022 +0100
+
+    Merge pull request #4 from haqulol/main
+    
+    fix dev branch
+
+commit 020a25b47e5c01077ae5fe31931dcd7703485dd1
+Merge: 3f88734 56074fd
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Thu Jan 6 17:50:00 2022 +0100
+
+    Merge pull request #3 from haqulol/dev
+    
+    Updated name and size of window
+
+commit 56074fd9160a21e37d66ee152644c587f33dbb6e
+Author: SiWoMoManaManaPNipNia <97243631+SiWoMoManaManaPNipNia@users.noreply.github.com>
+Date:   Thu Jan 6 17:49:10 2022 +0100
+
+    Updated name and size of window
+
+commit 3f88734c2de4cf8b13361bdab846dd362e6e08aa
+Merge: 4cc49b1 b84a1ba
+Author: SiWoMoManaManaPNipNia <97243631+SiWoMoManaManaPNipNia@users.noreply.github.com>
+Date:   Thu Jan 6 17:45:15 2022 +0100
+
+    Merge pull request #2 from haqulol/dev
+    
+    Add files via upload
+
+commit b84a1bac9652561d14b2ff8e719abef9f5891cb1
+Author: Hendrik0058 <73220905+Hendrik0058@users.noreply.github.com>
+Date:   Thu Jan 6 17:43:28 2022 +0100
+
+    Add files via upload
+
+commit 4cc49b10fa7f0bc60229f31785751df322552039
+Author: SiWoMoManaManaPNipNia <97243631+SiWoMoManaManaPNipNia@users.noreply.github.com>
+Date:   Thu Jan 6 17:40:07 2022 +0100
+
+    Updated size of the window
+
+commit eb48ed66304c526811cfe64c18dc9bb5b165ab12
+Author: SiWoMoManaManaPNipNia <97243631+SiWoMoManaManaPNipNia@users.noreply.github.com>
+Date:   Thu Jan 6 17:37:54 2022 +0100
+
+    new GUI
+
+commit b1073cd68592f5e6619e0b0dcc0d63f5ebe6e1cc
+Merge: 74c6eb9 59ba617
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Thu Jan 6 17:23:56 2022 +0100
+
+    Merge pull request #1 from haqulol/dev
+    
+    Dev
+
+commit 59ba617169cd3fa81d08097d89894e3e7756e7ad
+Author: SiWoMoManaManaPNipNia <97243631+SiWoMoManaManaPNipNia@users.noreply.github.com>
+Date:   Thu Jan 6 17:20:24 2022 +0100
+
+    Update HelloApplication.java
+
+commit 1d46c2fad9384cd377271e10feb04c3b3ce313a2
+Author: MathisBo <97238340+MathisBo@users.noreply.github.com>
+Date:   Thu Jan 6 17:16:01 2022 +0100
+
+    Add files via upload
+    
+    Default Version of JavaFX
+
+commit 74c6eb9e1fe4c677c928231f31110b81d62148f3
+Author: haqulol <73111740+haqulol@users.noreply.github.com>
+Date:   Thu Jan 6 17:10:43 2022 +0100
+
+    Initial commit
