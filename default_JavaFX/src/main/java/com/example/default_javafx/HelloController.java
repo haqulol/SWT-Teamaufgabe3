@@ -3,21 +3,22 @@ package com.example.default_javafx;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
+
 import java.lang.Math;
 
 public class HelloController {
 
     @FXML
-    private TextField textField;
+    private TextField textField;    // Displays result
 
     @FXML
-    private Text savedNumbers;
+    private Text savedNumbers;      // Displays last calculation
 
     private String firstNumber = "";
 
     private String currentNumber = "";
 
-    private String calculationType;
+    private String calculationType;     // calculation operator
 
     @FXML
     void addAction() {
@@ -46,13 +47,13 @@ public class HelloController {
     }
 
     @FXML
-    void rootAction(){
+    void rootAction() {
         calculationSetup("^(1/2)");
         calculateOnlyOneNumberNeeded();
     }
 
     @FXML
-    void inverseAction(){
+    void inverseAction() {
         calculationSetup("^(-1)");
         calculateOnlyOneNumberNeeded();
     }
@@ -66,7 +67,7 @@ public class HelloController {
     }
 
     @FXML
-    void percentAction(){
+    void percentAction() {
         double firstNumberDouble = Double.parseDouble(firstNumber);
         double currentNumberDouble = Double.parseDouble(currentNumber);
         currentNumberDouble *= firstNumberDouble / 100;
@@ -75,19 +76,21 @@ public class HelloController {
     }
 
     @FXML
-    void decimalAction(){
-        currentNumber = currentNumber.concat(".");
-        textField.setText(currentNumber);
+    void decimalAction() {
+        if ((Double.parseDouble(currentNumber) % 1) == 0){
+            currentNumber = currentNumber.concat(".");
+            textField.setText(currentNumber);
+        }
     }
 
     @FXML
-    void negateAction(){
+    void negateAction() {
         calculationSetup("*(-1)");
         calculateOnlyOneNumberNeeded();
     }
 
     @FXML
-    void cAction(){
+    void cAction() {
         currentNumber = "";
         firstNumber = "";
         textField.setText(currentNumber);
@@ -102,74 +105,88 @@ public class HelloController {
 
     public void calculationSetup(String calculationType){
         this.calculationType = calculationType;
-        firstNumber = currentNumber;
+        if ((firstNumber.equals(""))){
+            firstNumber = currentNumber;
+        }
         currentNumber = "";
         savedNumbers.setText(firstNumber + " " + calculationType);
     }
 
     @FXML
     void calculate() {
-        double firstNumberDouble = Double.parseDouble(firstNumber);
-        double secondNumberDouble = Double.parseDouble(currentNumber);
+        if ((!firstNumber.equals("")) && (!currentNumber.equals(""))){
+            double firstNumberDouble = Double.parseDouble(firstNumber);
+            double secondNumberDouble = Double.parseDouble(currentNumber);
 
-        switch (calculationType) {
-            case "+" -> {
-                double calculatedNumber = firstNumberDouble + secondNumberDouble;
-                savedNumbers.setText(firstNumber + " + " + currentNumber + " = " + calculatedNumber);
-                textField.setText(String.valueOf(calculatedNumber));
-                currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
-            }
-            case "-" -> {
-                double calculatedNumber = firstNumberDouble - secondNumberDouble;
-                savedNumbers.setText(firstNumber + " - " + currentNumber + " = " + calculatedNumber);
-                textField.setText(String.valueOf(calculatedNumber));
-                currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
-            }
-            case "/" -> {
-                if (secondNumberDouble != 0) {
-                    double calculatedNumber = firstNumberDouble / secondNumberDouble;
-                    savedNumbers.setText(firstNumber + " / " + currentNumber + " = " + calculatedNumber);
+            switch (calculationType) {
+                case "+" -> {
+                    double calculatedNumber = firstNumberDouble + secondNumberDouble;
+                    savedNumbers.setText(firstNumber + " + " + currentNumber + " = " + calculatedNumber);
                     textField.setText(String.valueOf(calculatedNumber));
-                    currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+                    firstNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+                }
+                case "-" -> {
+                    double calculatedNumber = firstNumberDouble - secondNumberDouble;
+                    savedNumbers.setText(firstNumber + " - " + currentNumber + " = " + calculatedNumber);
+                    textField.setText(String.valueOf(calculatedNumber));
+                    firstNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+                }
+                case "/" -> {
+                    if (secondNumberDouble != 0) {
+                        double calculatedNumber = firstNumberDouble / secondNumberDouble;
+                        savedNumbers.setText(firstNumber + " / " + currentNumber + " = " + calculatedNumber);
+                        textField.setText(String.valueOf(calculatedNumber));
+                        firstNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+                    }
+                }
+                case "*" -> {
+                    double calculatedNumber = firstNumberDouble * secondNumberDouble;
+                    savedNumbers.setText(firstNumber + " * " + currentNumber + " = " + calculatedNumber);
+                    textField.setText(String.valueOf(calculatedNumber));
+                    firstNumber = String.valueOf(calculatedNumber);           // go on with calculated number
                 }
             }
-            case "*" -> {
-                double calculatedNumber = firstNumberDouble * secondNumberDouble;
-                savedNumbers.setText(firstNumber + " * " + currentNumber + " = " + calculatedNumber);
-                textField.setText(String.valueOf(calculatedNumber));
-                currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
-            }
         }
+
     }
 
     @FXML
     void calculateOnlyOneNumberNeeded() {
-        double firstNumberDouble = Double.parseDouble(firstNumber);
+        if (!firstNumber.equals("")){
+            double firstNumberDouble = Double.parseDouble(firstNumber);
 
-        switch (calculationType) {
-            case "^2" -> {
-                double calculatedNumber = firstNumberDouble * firstNumberDouble;
-                savedNumbers.setText(firstNumber + " ^2 " + " = " + calculatedNumber);
-                textField.setText(String.valueOf(calculatedNumber));
-                currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+            switch (calculationType) {
+                case "^2" -> {
+                    double calculatedNumber = firstNumberDouble * firstNumberDouble;
+                    savedNumbers.setText(firstNumber + " ^2 " + " = " + calculatedNumber);
+                    textField.setText(String.valueOf(calculatedNumber));
+                    firstNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+                }
+                case "^(1/2)" -> {
+                    double calculatedNumber = Math.sqrt(firstNumberDouble);
+                    savedNumbers.setText(firstNumber + " ^(1/2) " + " = " + calculatedNumber);
+                    textField.setText(String.valueOf(calculatedNumber));
+                    firstNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+                }
+                case "^(-1)" -> {
+                    double calculatedNumber = 1 / firstNumberDouble;
+                    savedNumbers.setText(firstNumber + " ^(-1) " + " = " + calculatedNumber);
+                    textField.setText(String.valueOf(calculatedNumber));
+                    firstNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+                }
+                case "*(-1)" -> {
+                    double calculatedNumber = -firstNumberDouble;
+                    savedNumbers.setText(firstNumber + " *(-1) " + " = " + calculatedNumber);
+                    textField.setText(String.valueOf(calculatedNumber));
+                    firstNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+                }
             }
-            case "^(1/2)" -> {
-                double calculatedNumber = Math.sqrt(firstNumberDouble);
-                savedNumbers.setText(firstNumber + " ^(1/2) " + " = " + calculatedNumber);
-                textField.setText(String.valueOf(calculatedNumber));
-                currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
-            }
-            case "^(-1)" -> {
-                double calculatedNumber = 1 / firstNumberDouble;
-                savedNumbers.setText(firstNumber + " ^(-1) " + " = " + calculatedNumber);
-                textField.setText(String.valueOf(calculatedNumber));
-                currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
-            }
-            case "*(-1)" -> {
-                double calculatedNumber = -firstNumberDouble;
-                savedNumbers.setText(firstNumber + " *(-1) " + " = " + calculatedNumber);
-                textField.setText(String.valueOf(calculatedNumber));
-                currentNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+        } else {
+            switch (calculationType){
+                case "*(-1)" -> {
+                    currentNumber += "-";
+                    textField.setText(currentNumber);
+                }
             }
         }
 
@@ -178,7 +195,7 @@ public class HelloController {
 
     @FXML
     void button0Clicked() {
-       addNumber("0");
+        addNumber("0");
     }
 
     @FXML
