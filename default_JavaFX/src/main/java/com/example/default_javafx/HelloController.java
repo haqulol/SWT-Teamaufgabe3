@@ -175,12 +175,17 @@ public class HelloController {
                     firstNumber = String.valueOf(calculatedNumber);           // go on with calculated number
                 }
                 case "/" -> {
-                    if (secondNumberDouble != 0) {
-                        double calculatedNumber = firstNumberDouble / secondNumberDouble;
-                        savedNumbers.setText(firstNumber + " / " + currentNumber + " = " + calculatedNumber);
-                        textField.setText(String.valueOf(calculatedNumber));
-                        firstNumber = String.valueOf(calculatedNumber);           // go on with calculated number
+                    double calculatedNumber = firstNumberDouble / secondNumberDouble;
+                    // Case if divide by zero
+                    if(calculatedNumber == Double.POSITIVE_INFINITY || calculatedNumber== Double.NEGATIVE_INFINITY) {
+                        cAction();
+                        savedNumbers.setText(String.valueOf(calculatedNumber));
+                        firstNumberOnDisplay = true;
+                        return;
                     }
+                    savedNumbers.setText(firstNumber + " / " + currentNumber + " = " + calculatedNumber);
+                    textField.setText(String.valueOf(calculatedNumber));
+                    firstNumber = String.valueOf(calculatedNumber);           // go on with calculated number
                 }
                 case "*" -> {
                     double calculatedNumber = firstNumberDouble * secondNumberDouble;
